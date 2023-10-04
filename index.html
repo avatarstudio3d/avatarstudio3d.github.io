@@ -46,7 +46,6 @@
                     To ensure view consistency and pose controllability of the resulting avatars, we  introduce a 2D diffusion model conditioned on DensePose for Score Distillation Sampling supervision.
                     By effectively leveraging the synergy between the articulated mesh representation and the DensePose-conditional diffusion model, AvatarStudio can create high-quality avatars from text that are ready for animation, significantly outperforming previous methods.  Moreover, it is competent for many applications, e.g., multimodal avatar animations and style-guided avatar creation.
                 </p>
-                <!-- <br> -->
             </div>
         </div>
     </div>
@@ -126,12 +125,12 @@
             </div>
             <div class="col-3">
                 <div class="video-compare-container" style="width: 100%">
-                    <video class="video lazy" id="ex34" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
-                        <source data-src="static/generation/Assassin_Creed.mp4" type="video/mp4"></source>
+                    <video class="video lazy" id="ex20" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source data-src="static/generation/kilt.mp4" type="video/mp4"></source>
                     </video>
-                    <canvas height="752" class="videoMerge" id="ex34Merge" width="1002"></canvas>
+                    <canvas height="752" class="videoMerge" id="ex20Merge" width="1002"></canvas>
                 </div>
-                <h6 class="caption">Assassin Creed</h6>
+                <h6 class="caption">A man wearing kilt</h6>
             </div>
             <div class="col-3">
                 <div class="video-compare-container" style="width: 100%">
@@ -164,12 +163,12 @@
             </div>
             <div class="col-3">
                 <div class="video-compare-container" style="width: 100%">
-                    <video class="video lazy" id="ex20" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
-                        <source data-src="static/generation/kilt.mp4" type="video/mp4"></source>
+                    <video class="video lazy" id="ex34" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                        <source data-src="static/generation/Lara_Croft_in_Tomb_Raider.mp4" type="video/mp4"></source>
                     </video>
-                    <canvas height="752" class="videoMerge" id="ex20Merge" width="1002"></canvas>
+                    <canvas height="752" class="videoMerge" id="ex34Merge" width="1002"></canvas>
                 </div>
-                <h6 class="caption">A man wearing kilt</h6>
+                <h6 class="caption">Lara Croft in Tomb Raider</h6>
             </div>
             <div class="col-3">
                 <div class="video-compare-container" style="width: 100%">
@@ -257,6 +256,77 @@
                 <h6 class="caption">Abraham Lincoln</h6>
             </div>
         </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Comparison Results</h2>
+                <p>We compare AvatarStudio with other text-guided generation methods.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 0px;">
+            <div class="col-xs-15 compare-title  compare-title-sm">
+                <p>Dreamfusion</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>Magic3D-Fine</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>DreamAvatar</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>DreamWaltz</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>Ours</p>
+            </div>
+        </div>
+        <div class="row captioned_videos" id="res_2" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/comparison/comp_1.mp4" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">Assassin Creed</p>
+        </div>
+        <div class="row captioned_videos" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/comparison/comp_2.mp4" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">A standing Captain Jack Sparrow from Pirates of the Caribbean</p>
+        </div>
+
+        <div class="row" style="margin-bottom: 0px;">
+            <div class="col-xs-15 compare-title  compare-title-sm">
+                <p>Dreamfusion</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>Magic3D-Fine</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>DreamHuman</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>AvatarVerse</p>
+            </div>
+            <div class="col-xs-15 compare-title">
+                <p>Ours</p>
+            </div>
+        </div>
+
+        <div class="row captioned_videos" id="res_3" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/comparison/comp_3.mp4" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">A man wearing a bomber jacket</p>
+        </div>
+        <div class="row captioned_videos" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/comparison/comp_4.mp4" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">A karate master wearing a Black belt</p>
+        </div>
+
     </div>
 
     <hr class="divider" />
