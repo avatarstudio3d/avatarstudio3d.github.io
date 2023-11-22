@@ -58,6 +58,352 @@
         </div>
     </div>
 
+    <!-- different sds guidances -->
+    <hr class="divider" />
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Comparison between different SDS guidances</h2>
+                    <p>We compare avatar results generated using different SDS guidances, i.e., pure Stable Diffusion (left), Skeleton-based ControlNet (middle) and DensePose-conditional ControlNet (right) guidances.</p>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-12">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_guidance/albus_dumbledore_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Albus Dumbledore</h6>
+                </div>
+                <div class="col-12">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_guidance/wolverine_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Wolverine, Marvel Character</h6>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-12">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_guidance/zeus_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Zeus</h6>
+                </div>
+                <!-- <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_guidance/blackman_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">A Black man wearing a red baseball cap</h6>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- new animation results -->
+        <hr class="divider" />
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>More animation results</h2>
+                    <p>Our AvatarStudio can achieve plausible animation results on loose clothing to a certain extent, such as a person wearing ballet costume.
+                       By further introducing non-rigid deformation module into the model, AvatarStudio can animate persons with more challenging clothes, e.g., skirts and dresses.
+                    </p>
+                </div>
+            </div>
+            <hr>  <!-- 添加分割线 -->
+            <h6 class="caption" style="text-align: center;">Original AvatarStudio</h6>
+            <hr>  <!-- 添加分割线 -->
+            <div class="row captioned_videos">
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/ballerina_001.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/ballerina_002.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">A ballerina</h6>
+                </div>
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/ballerina_003.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+            </div>
+            <hr>  <!-- 添加分割线 -->
+            <h6 class="caption" style="text-align: center;">AvatarStudio with non-rigid deformation</h6>
+            <hr>  <!-- 添加分割线 -->
+            <div class="row captioned_videos">
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/jean_001.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/jean_002.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">A woman wearing a short jean skirt and a cropped top</h6>
+                </div>
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/jean_003.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/pregnant_person_001.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/pregnant_person_002.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">A pregnant person of color</h6>
+                </div>
+                <div class="col-4">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/new_animation/pregnant_person_003.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- different representations -->
+        <hr class="divider" />
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Comparison between different 3D representations</h2>
+                    <p>We compare avatar results generated using different 3D representations, i.e., pure DMTet (left), pure NeRF (middle) and ours (right) representations.
+                        The NeRF-only representation, despite achieving reasonable results, still struggles with issues like coarse faces and noisy geometry with floating artifacts.
+                    </p>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-12">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_representation/einstein_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Albert Einstein</h6>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-12">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_representation/harry_potter_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Harry Potter</h6>
+                </div>
+            </div>
+            <!-- <div class="row captioned_videos">
+                <div class="col-12">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/different_representation/harry_potter_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Zeus</h6>
+                </div> -->
+            </div>
+        </div>
+
+
+        <!-- More complicated prompts -->
+        <hr class="divider" />
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Avatar creation with more complicated prompts</h2>
+                    <p>AvatarStudio has shown promising results, effectively aligning the generated avatars with the detailed descriptions of the complex prompts.</p>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/1_america_native_outfit.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Elderly woman, dressed in a traditional Native American outfit, holding dream catchers, braided hair</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/2_lara.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Cute chibi Lara Croft, game, Pixar design, studio lighting, modern Disney style, 3D character</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/3_thor.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Chibi Thor with Mjolnir, cute, volumetric lighting, reflective textures, game, character</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/9_medieval.mp4" type="video/mp4"></source>
+                    </video>
+                <h6 class="caption">Medieval solder holding two longswords on hands, fantasy, game, character</h6>
+            </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/5_tesla_trooper.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Tesla trooper, wearing Mecha suit, scifi, game character, unreal, 3D rendering, fantasy</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/6_magic.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Chibi, single boy, cute, magician's outfit, top hat, magic wand, curly hair, shiny shoes</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/7_cyberpunk.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Young man, dressed in a futuristic cyberpunk outfit, neon accents, holding a high-tech gadget</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/4_gentleman.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Elderly gentleman, dressed in a vintage suit, monocle, holding walking canes on hands</h6>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/11_teenage.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Teenage boy, dressed in a modern hip-hop style, baseball cap tilted, holding basketballs</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/10_boy_toy_knife.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Chibi, 1boy, cute, knight armor, helmet, holding toy knife on hands, Pixar design</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/12_samurai-outfit.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Elderly man, dressed in a traditional samurai outfit, holding katana</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/8_fox_outfit.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Chibi, 1girl, hanfu, cat ears, cat girl, silk robe, wavy hair, wearing traditional sandals</h6>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/14_ninja.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Stealthy hinja holding dual katanas, 3D, game character, unreal</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/16_A_little_girl_dressed_as_Wonder_Woman,_chibi_style,_action_pose,_best_quality,_masterpiece,_details,_volumetric_lighting,_reflection,_reflective_textures,_highly_detailed.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">A little girl dressed as Wonder Woman, chibi style, volumetric lighting, Disney style</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/15_salyer.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Strong Slayer, holding machete on hands, game character, 3D rendering, unreal</h6>
+                </div>
+                <div class="col-3">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/complicated_prompts/13_goku.mp4" type="video/mp4"></source>
+                    </video>
+                <h6 class="caption">Cute chibi Son Goku, Sporty style outfit, shoes, nike jacket, little boy, cartoon</h6>
+            </div>
+        </div>
+
+        <!-- less optimization time -->
+        <hr class="divider" />
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Generations with fewer optimization steps</h2>
+                    <p>We conduct a comparative analysis of the avatar generation results that are achieved with fewer optimization steps. Left: the results obtained with reduced optimization steps. Right: original results.
+                        We see the model, even when optimized with fewer steps, can still yield results that are comparable to the original ones.
+                    </p>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/lesstime/lincoln_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Abraham Lincoln</h6>
+                </div>
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/lesstime/messi_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Messi</h6>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/lesstime/harry_potter_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Harry Potter</h6>
+                </div>
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/lesstime/karate_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">A karate master wearing a black belt</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- dual space comparison -->
+        <hr class="divider" />
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Dual-space training</h2>
+                    <p>We compare the animation results of models trained without (left) and with (right) dual-space training strategies. 
+                        By discarding dual-space training, certain floating artifacts can be observed around the hip and shoulder regions during the animation process.
+                    </p>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/dualspace/captain_america_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Captain America</h6>
+                </div>
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/dualspace/iron_man_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Iron Man</h6>
+                </div>
+            </div>
+            <div class="row captioned_videos">
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/dualspace/hulk_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Hulk, Marvel Character</h6>
+                </div>
+                <div class="col-6">
+                    <video class="video lazy" autoplay loop playsinline muted>
+                        <source data-src="static/dualspace/policeman_dual_merge.mp4" type="video/mp4"></source>
+                    </video>
+                    <h6 class="caption">Policewoman</h6>
+                </div>
+            </div>
+        </div>
+
     <hr class="divider" />
     <div class="container" style="max-width: 768px;">
         <div class="row">
