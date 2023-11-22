@@ -64,8 +64,13 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2>Comparison between different SDS guidances</h2>
-                    <p>We compare avatar results generated using different SDS guidances, i.e., pure Stable Diffusion (left), Skeleton-based ControlNet (middle) and DensePose-conditional ControlNet (right) guidances.</p>
+                    <p>We compare avatar results generated using different SDS guidances, i.e., Stable Diffusion (left), Skeleton-based ControlNet (middle) and DensePose-conditional ControlNet (right) guidances.</p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 text-center">Stable Diffusion</div>
+                <div class="col-sm-4 text-center">Skeleton-based ControlNet</div>
+                <div class="col-sm-4 text-center">DensePose-conditional ControlNet</div>
             </div>
             <div class="row captioned_videos">
                 <div class="col-12">
@@ -176,10 +181,15 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2>Comparison between different 3D representations</h2>
-                    <p>We compare avatar results generated using different 3D representations, i.e., pure DMTet (left), pure NeRF (middle) and ours (right) representations.
+                    <p>We compare avatar results generated using different 3D representations, i.e., DMTet-only (left), NeRF-only (middle) and ours (right) representations.
                         The NeRF-only representation, despite achieving reasonable results, still struggles with issues like coarse faces and noisy geometry with floating artifacts.
                     </p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 text-center">DMTet</div>
+                <div class="col-sm-4 text-center">NeRF</div>
+                <div class="col-sm-4 text-center">Ours</div>
             </div>
             <div class="row captioned_videos">
                 <div class="col-12">
@@ -333,6 +343,12 @@
                     </p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-3 text-center">Fewer steps</div>
+                <div class="col-sm-3 text-center">Default</div>
+                <div class="col-sm-3 text-center">Fewer steps</div>
+                <div class="col-sm-3 text-center">Default</div>
+            </div>
             <div class="row captioned_videos">
                 <div class="col-6">
                     <video class="video lazy" autoplay loop playsinline muted>
@@ -373,6 +389,12 @@
                         By discarding dual-space training, certain floating artifacts can be observed around the hip and shoulder regions during the animation process.
                     </p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-center">w/o dual-space</div>
+                <div class="col-sm-3 text-center">w/ dual-space</div>
+                <div class="col-sm-3 text-center">w/o dual-space</div>
+                <div class="col-sm-3 text-center">w/ dual-space</div>
             </div>
             <div class="row captioned_videos">
                 <div class="col-6">
